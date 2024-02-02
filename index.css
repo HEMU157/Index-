@@ -1,0 +1,558 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.title {
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title h1 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.title p span {
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.title p:last-child {
+    margin-bottom: 40px;
+}
+
+.inner-con {
+    width: 50%;
+    border: 1px solid yellow;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    align-items: center;
+    height: 140px;
+    border-radius: 25px;
+    padding: 25px 50px;
+    background-color: #06444F;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.left-con {
+   
+    height: 100px;
+    width: 70%;
+}
+
+.left-con-body {
+    display: flex;
+    
+    width: 100%;
+}
+
+.left-subdiv,
+.right-subdiv {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.left-subdiv {
+   
+    margin-right: 30px;
+}
+
+.right-subdiv {
+   
+
+}
+
+.inner-body {
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.g-logo {
+    height: inherit;
+}
+
+.g-logo img {
+    width: 20px;
+    height: 20px;
+}
+
+.inner-name {
+    font-size: 17px;
+    width: 100px;
+    height: inherit;
+    width: 110px;
+}
+
+.rate {
+    font-size: 40px;
+    color: #BBEF30;
+    display: flex;
+}
+
+.rate sub {
+    align-self: flex-end;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.button-div button {
+    width: 130px;
+    padding: 10px 10px;
+    border-radius: 30px;
+    background-color: #BBEF30;
+    font-size: 16px;
+}
+
+button span {
+    padding-left: 10px;
+}
+
+table {
+    font-family: Poppins-light;
+    margin-top: 20px;
+    letter-spacing: -0.5px;
+    width: 90%;
+    border-collapse: separate;
+    font-size: 15px;
+    border-width: 0;
+    border-spacing: 0;
+    margin-bottom: 40px;
+}
+
+table tr:first-child {
+
+    background-color: #BBEF30;
+}
+
+table tr:first-child th:first-child {
+    border-top-left-radius: 30px;
+}
+
+table tr:first-child th:last-child {
+    border-top-right-radius: 30px;
+}
+
+table tr:last-child td:first-child {
+    border-bottom-left-radius: 30px;
+}
+
+table tr:last-child td:last-child {
+    border-bottom-right-radius: 30px;
+}
+
+table tr:not(:first-child):nth-child(odd) {
+    background-color: #F1F0F0;
+    /* Change the background color as needed */
+}
+
+table tr {
+    height: 70px;
+    padding: 10px 45px;
+}
+
+table td,
+th {
+    padding: 10px 45px;
+}
+.table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media only screen and (max-width: 500px) {
+    .table{
+        width: 100%;
+        display: flex;
+       
+        justify-content: center;
+        align-items: center;
+    }
+    #table {
+        font-family: Poppins-light;
+        width: 95%;
+        border-collapse: separate;
+        font-size: 13px;
+        border-width: 0;
+    }
+    table{
+        width: 95%;
+    }
+
+    table tr {
+        height: 50px; 
+         padding: 0px 10px;
+         width: 95%;
+    }
+    table th,td{
+        text-align: center;
+        width: 36%;
+    }
+
+    table td,th {
+        padding: 0;
+    }
+
+    .title {
+        text-align: center;
+        width: 90%;
+    }
+
+    .inner-con {
+        width: 95%;
+        padding: 10px 10px;
+    }
+
+    .left-con {
+        width: 85%;
+    }
+
+    .left-con-heading {
+        font-size: 12px;
+    }
+
+    .left-subdiv {
+       
+        margin-right: 8px;
+    }
+
+    .inner-name {
+        font-size: 11px;
+    }
+
+    .rate sub {
+        font-size: 10px;
+    }
+
+    .g-logo {
+        height: inherit;
+    }
+
+    .g-logo img {
+        aspect-ratio: 1;
+        width: 15px;
+        padding-right: 4px;
+    }
+
+
+    .button-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        height: fit-content;
+    }
+
+    .button-div button {
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .btn span:first-child {
+        display: none;
+    }
+
+    .btn span:last-child {
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width:700px) {
+    .title {
+        text-align: center;
+        width: 90%;
+    }
+
+    .inner-con {
+        width: 95%;
+        padding: 10px 15px;
+    }
+
+    .left-con {
+        width: 85%;
+    }
+
+    .left-con-heading {
+        font-size: 14px;
+    }
+
+    .left-subdiv {
+        margin-right: 10px;
+    }
+
+    .inner-name {
+        font-size: 12px;
+    }
+
+    .rate sub {
+        font-size: 14px;
+    }
+
+    .g-logo {
+        height: inherit;
+    }
+
+    .g-logo img {
+        aspect-ratio: 1;
+        width: 18px;
+        padding-right: 4px;
+    }
+
+
+    .button-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        height: fit-content;
+    }
+
+    .button-div button {
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .btn span:first-child {
+        display: none;
+    }
+
+    .btn span:last-child {
+        padding: 0;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 701px) and (max-width:900px) {
+    .title {
+        text-align: center;
+        width: 90%;
+    }
+
+    .inner-con {
+        width: 90%;
+        padding: 10px 15px;
+    }
+
+    .left-con {
+        width: 85%;
+    }
+
+    .left-con-heading {
+        font-size: 14px;
+    }
+
+    .left-subdiv {
+        
+        margin-right: 10px;
+    }
+
+    .inner-name {
+        font-size: 15px;
+    }
+
+    .rate sub {
+        font-size: 14px;
+    }
+
+    .g-logo {
+        height: inherit;
+    }
+
+    .g-logo img {
+        aspect-ratio: 1;
+        width: 18px;
+        padding-right: 4px;
+    }
+
+
+    .button-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        height: fit-content;
+    }
+
+    .button-div button {
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .btn span:first-child {
+        display: none;
+    }
+
+    .btn span:last-child {
+        padding: 0;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 901px) and (max-width:1060px)  {
+    .title {
+        text-align: center;
+        width: 90%;
+    }
+
+    .inner-con {
+        width: 80%;
+        padding: 10px 15px;
+    }
+
+    .left-con {
+        width: 85%;
+    }
+
+    .left-con-heading {
+        font-size: 14px;
+    }
+
+    .left-subdiv {
+        margin-right: 10px;
+    }
+
+    .inner-name {
+        font-size: 15px;
+    }
+
+    .rate sub {
+        font-size: 14px;
+    }
+
+    .g-logo {
+        height: inherit;
+    }
+
+    .g-logo img {
+        aspect-ratio: 1;
+        width: 18px;
+        padding-right: 4px;
+    }
+
+
+    .button-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        height: fit-content;
+    }
+
+    .button-div button {
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .btn span:first-child {
+        display: none ;
+    }
+
+    .btn span:last-child {
+        padding: 0;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 1060px) and (max-width:1280px)  {
+    .title {
+        text-align: center;
+        width: 90%;
+    }
+    .container{
+        width: 100%;
+
+    }
+
+    .inner-con {
+        width: 80%;
+        padding: 10px 15px;
+    }
+
+    .left-con {
+        width: 85%;
+    }
+
+    .left-con-heading {
+        font-size: 14px;
+    }
+
+    .left-subdiv {
+        margin-right: 10px;
+    }
+
+    .inner-name {
+        font-size: 15px;
+    }
+
+    .rate sub {
+        font-size: 14px;
+    }
+
+    .g-logo {
+        height: inherit;
+    }
+
+    .g-logo img {
+        aspect-ratio: 1;
+        width: 18px;
+        padding-right: 4px;
+    }
+
+
+    .button-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        height: fit-content;
+    }
+
+    .button-div button {
+        width: 120px;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .btn span:first-child {
+        display: block ;
+    }
+
+    .btn span:last-child {
+        padding: 0;
+        font-size: 18px;
+    }
+}
